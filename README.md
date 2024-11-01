@@ -14,7 +14,7 @@ DowellLogoScan is a web application for logo detection and feature extraction us
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/DowellLogoScan.git
-   cd DowellLogoScan
+   cd logo_scan_API
 
 2. Install the required packages:
    ```bash   
