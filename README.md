@@ -16,10 +16,12 @@ DowellLogoScan is a web application for logo detection and feature extraction us
    git clone https://github.com/yourusername/DowellLogoScan.git
    cd DowellLogoScan
 
-2. Install the required packages:    
+2. Install the required packages:
+   ```bash   
    pip install -r requirements.txt
 
-3. Set up your MongoDB connection in *config/db.py* or in the *config.json* file.
+4. Set up your MongoDB connection in *config/db.py* or in the *config.json* file.
 
-4. Running the Application
+5. Running the Application
+   ```bash
    uvicorn main:app
