@@ -1,25 +1,25 @@
-DowellLogoScan/
-│
-├── main.py               # The main entry point to start the FastAPI server
-├── api/                  # Folder for organizing API routes
-│   ├── init.py       # Makes this folder a Python package
-│   ├── auth.py           # Contains authentication-related endpoints
-│   ├── upload.py         # Contains upload-related endpoints
-│   └── search.py         # Contains search-related endpoints
-├── config/               # Folder for configurations
-│   ├── init.py
-│   └── db.py             # Contains MongoDB connection setup
-├── models/               # Folder for response models and data models
-│   ├── init.py
-│   ├── responses.py      # Response models for structured JSON responses
-│   └── extractor.py      # Feature extraction logic
-├── static/               # Folder for main html, upload html and search html
-    └── index.html        # main Site
-    └── search.html       # Search ( Comparison) Site
-    └── upload.html       # Upload Site
-└── config.json           # Configuration file for MongoDB and other settings
-└── requirments.txt       # Pakages nee to run this application
+# DowellLogoScan
 
+DowellLogoScan is a web application for logo detection and feature extraction using FastAPI and MongoDB. This project provides functionalities for uploading logo images and searching for similar logos based on extracted features.
 
-#Run Command 
-uvicorn main:app
+## Features
+
+- **User Authentication:** Secure endpoints for uploading and searching logos.
+- **Logo Uploading:** Users can upload logo images along with additional metadata.
+- **Logo Searching:** Search for similar logos based on features extracted from uploaded images.
+- **Responsive Design:** Simple and user-friendly HTML interface for easy navigation.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/DowellLogoScan.git
+   cd DowellLogoScan
+
+2. Install the required packages:    
+   pip install -r requirements.txt
+
+3. Set up your MongoDB connection in *config/db.py* or in the *config.json* file.
+
+4. Running the Application
+   uvicorn main:app
