@@ -1,9 +1,4 @@
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
-os.environ['CUDA_VISIBLE_DEVICES'] = ""
-
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
