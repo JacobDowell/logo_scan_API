@@ -24,4 +24,4 @@ DowellLogoScan is a web application for logo detection and feature extraction us
 
 5. Running the Application
    ```bash
-   uvicorn main:app
+   uvicorn main:app --host 0.0.0.0
